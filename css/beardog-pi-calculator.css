@@ -1,0 +1,377 @@
+@font-face {
+        font-family: 'Source Sans 3';
+        src: url('../fonts/SourceSans3-Regular.eot');
+        src: local('Source Sans 3 Regular'), local('SourceSans3-Regular'),
+            url('../fonts/SourceSans3-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SourceSans3-Regular.woff2') format('woff2'),
+            url('../fonts/SourceSans3-Regular.woff') format('woff'),
+            url('../fonts/SourceSans3-Regular.ttf') format('truetype'),
+            url('../fonts/SourceSans3-Regular.svg#SourceSans3-Regular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Sans 3';
+        src: url('../fonts/SourceSans3-Bold.eot');
+        src: local('Source Sans 3 Bold'), local('SourceSans3-Bold'),
+            url('../fonts/SourceSans3-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SourceSans3-Bold.woff2') format('woff2'),
+            url('../fonts/SourceSans3-Bold.woff') format('woff'),
+            url('../fonts/SourceSans3-Bold.ttf') format('truetype'),
+            url('../fonts/SourceSans3-Bold.svg#SourceSans3-Bold') format('svg');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Sans 3';
+        src: url('../fonts/SourceSans3-Black.eot');
+        src: local('Source Sans 3 Black'), local('SourceSans3-Black'),
+            url('../fonts/SourceSans3-Black.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/SourceSans3-Black.woff2') format('woff2'),
+            url('../fonts/SourceSans3-Black.woff') format('woff'),
+            url('../fonts/SourceSans3-Black.ttf') format('truetype'),
+            url('../fonts/SourceSans3-Black.svg#SourceSans3-Black') format('svg');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    .form-container{
+      width: 100%;
+      padding-right: var(--bs-gutter-x,.75rem);
+      padding-left: var(--bs-gutter-x,.75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    *, ::after, ::before {
+      box-sizing: border-box;
+    }
+    .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x) * -.5);
+      margin-left: calc(var(--bs-gutter-x) * -.5);
+    }
+    .row > * {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      margin-top: var(--bs-gutter-y);
+    }
+    @media (min-width: 576px) {
+      .form-container{
+        max-width: 540px;
+      }
+    }
+    @media (min-width: 768px) {
+      .form-container{
+        max-width: 720px;
+      }
+      .col-md-12{
+        flex: 0 0 auto;
+        width: 100%;
+      }
+    }
+    @media (min-width: 992px) {
+      .form-container{
+        max-width: 960px;
+      }
+      .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+      }
+      .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+      }
+      .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+      }
+      .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+      .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+      }
+      .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+      }
+      .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
+      .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%;
+      }
+      .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+      }
+      .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+      }
+      .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+    }
+    @media (min-width: 1200px) {
+      .form-container{
+        max-width: 1140px;
+      }
+    }
+    @media (min-width: 1400px) {
+      .form-container{
+        max-width: 1320px;
+      }
+    }
+    .justify-content-between {
+      justify-content: space-between !important;
+    }
+    .align-items-center {
+      align-items: center !important;
+    }
+    .text-center {
+      text-align: center;
+      width: 100%;
+    }
+    strong {
+      font-weight: 700;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+    form#settlementCalculator {
+      background: #ffffffdb;
+      font-family: 'Source Sans 3';
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+      margin: 30px auto;
+      width: 70%;
+    }
+    .form-ttl {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: #f5f7f7;
+      padding: 20px 15px;
+    }
+    #settlementCalculator .form-ttl h2 {
+      font-family: 'Source Sans 3';
+      color: #272727;
+      font-size: 28px;
+      font-weight: 900;
+      margin: 0;
+      padding:0;
+      text-decoration: none;
+    }
+    #settlementCalculator .form-ttl h2::before, #settlementCalculator .form-ttl h2::after {
+      display: none;
+    }
+    .calc-row {
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #c7c7c7;
+      padding: 20px 24px;
+    }
+    .lab-desc {
+      display: inline-block;
+      width: 100%;
+    }
+    .form-left label {
+      display: inline-block;
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    #settlementCalculator .lab-desc p {
+      font-size: 16px;
+      color: #272727;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .form-left, .form-right {
+      color: #272727;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    .form-right {
+      padding-left: 50px;
+    }
+    .form-right input {
+      background: #fff;
+      border: 1px solid #c7c7c7;
+      font-family: 'Source Sans 3';
+      height: 48px;
+      width: 100%;
+      overflow: visible;
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: #272727;
+      font-weight: 400;
+      text-align: left;
+      padding: 0 10px;
+    }
+    .form-right input:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    .calc-res {
+      display: inline-block;
+      width: 100%;
+      background: #f5f7f7;
+    }
+    .calculator-results-title {
+      background-color: #f5f7f7;
+      color: #272727;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 0;
+    }
+    #economicDamages, #nonEconomicDamages, #settlementAmount {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    #settlementAmount {
+      margin: 0;
+    }
+    /* Range slider */
+    .form-right input[type=range] {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    .form-right #multiplierDisplay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0 auto;
+      max-width: 100%;
+      background: #272727;
+      width: 50px;
+      height: 30px;
+      color: #fff;
+    }
+    .form-right input[type="range"]::-webkit-slider-runnable-track  {
+      background: #a4a4a4;
+      height: 0.5rem;
+      border-radius: 50px;
+    }
+    .form-right input[type="range"]::-moz-range-track {
+      background: #a4a4a4;
+      height: 0.5rem;
+      border-radius: 50px;
+    }
+    .form-right  input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      border-radius: 50px;/* Centers thumb on the track */
+      background-color: #272727;
+      height: 1.5rem;
+      width: 1.5rem;
+      border: none;
+      margin-top:-8px;
+    }
+    .form-right  input[type="range"]::-moz-range-thumb {
+        border: none; /*Removes extra border that FF applies*/
+        border-radius: 50px; /*Removes default border-radius that FF applies*/
+        background-color: #272727;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    /***** Focus Styles *****/
+    .form-right input[type="range"]:focus {
+      outline: none;
+    }
+    /*.form-right input[type="range"]:focus::-webkit-slider-thumb {
+      border: 1px solid #f5f7f7;
+      outline: 3px solid #f5f7f7;
+      outline-offset: 0.125rem;
+    }
+    .form-right input[type="range"]:focus::-moz-range-thumb {
+      border: 1px solid #f5f7f7;
+      outline: 3px solid #053a5f;
+      outline-offset: 0.125rem;     
+    }*/
+    @media screen and (max-width:1399px){
+      .form-right {
+        padding-left: 20px;
+      }
+    }
+    @media screen and (max-width:1299px){
+      form#settlementCalculator {
+        width: 80%;
+      }
+    }
+    @media screen and (max-width:1199px){
+      form#settlementCalculator {
+        width: 90%;
+      }
+      .form-right {
+        padding-left: 20px;
+      }
+      .form-left label,#economicDamages, #nonEconomicDamages, #settlementAmount {
+        font-size: 18px;
+      }
+      #settlementCalculator .lab-desc p {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width:991px){
+      form#settlementCalculator {
+        width: 100%;
+      }
+      .form-right {
+        padding-left:0;
+      }
+      .lab-desc,#settlementAmount {
+        margin-bottom: 10px;
+      }
+      .calculator-results-title {
+        padding-bottom: 0;
+      }
+    }
+    @media screen and (max-width:767px){
+      #settlementCalculator .form-ttl h2 {
+        font-size: 24px;
+      }
+      .form-right input {
+        height: 40px;
+      }
+    }
